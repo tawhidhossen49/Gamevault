@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GameVault - Premium Game Marketplace</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="loading-screen" id="loadingScreen">
+    <div class="scanline"></div>
+    <div class="logo-group">
+      <div class="orbitron title-logo">GAMEVAULT</div>
+      <div class="rajdhani subtitle-logo">PREMIUM GAME MARKETPLACE</div>
+    </div>
+    <div class="spinner-container">
+      <div class="spinner-outer"></div>
+      <div class="spinner-mid"></div>
+      <div class="spinner-inner"></div>
+      <div class="spinner-core"></div>
+    </div>
+    <div class="progress-box">
+      <div class="progress-track">
+        <div class="progress-bar" id="progressBar"></div>
+      </div>
+      <div class="rajdhani phase-text" id="phaseText">INITIALIZING...</div>
+    </div>
+  </div>
+
+  <nav class="navbar" id="navbar">
+    <div class="nav-left">
+      <div class="logo-box">G</div>
+      <span class="orbitron logo-text">GAMEVAULT</span>
+    </div>
+    <div class="nav-links">
+      <a href="#" class="active">Store</a>
+      <a href="#">Library</a>
+      <a href="#">Community</a>
+      <a href="#">Deals</a>
+    </div>
+    <div class="nav-right">
+      <div class="search-wrapper" id="searchWrapper">
+        <svg id="searchIcon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#6b6b8a" stroke-width="2">
+          <circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+        <input type="text" placeholder="Search games..." id="searchInput">
+      </div>
+      <div class="cart-icon-wrapper">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#6b6b8a" stroke-width="2">
+          <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"></path>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <path d="M16 10a4 4 0 01-8 0"></path>
+        </svg>
+        <div class="cart-badge" id="cartBadge">3</div>
+      </div>
+      <button class="signin-btn">Sign In</button>
+    </div>
+  </nav>
+
+  <section class="hero-section">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+    <div class="grid-overlay"></div>
+
+    <div class="hero-content">
+      <div class="hero-badge">
+        <div class="live-pulse-dot"></div>
+        <span class="rajdhani">NEXT-GEN GAMING PLATFORM</span>
+      </div>
+      <h1 class="orbitron hero-title">
+        <span class="text-gradient-silver">Next Generation</span><br>
+        <span class="text-gradient-neon animate-gradient">Game Marketplace</span>
+      </h1>
+      <p class="hero-subtitle">
+        Discover, buy, and play AAA titles at the best prices. Thousands of games, instant delivery, and a community of millions.
+      </p>
+      <div class="hero-ctas">
+        <button class="primary-cta">Explore Games →</button>
+        <button class="secondary-cta">🔥 Trending Now</button>
+      </div>
+      <div class="hero-stats">
+        <div class="stat-node">
+          <div class="orbitron stat-val">10,000+</div>
+          <div class="stat-lbl">Games</div>
+        </div>
+        <div class="stat-node">
+          <div class="orbitron stat-val">50M+</div>
+          <div class="stat-lbl">Players</div>
+        </div>
+        <div class="stat-node">
+          <div class="orbitron stat-val">99.9%</div>
+          <div class="stat-lbl">Uptime</div>
+        </div>
+      </div>
+    </div>
+    <div class="bottom-fade"></div>
+  </section>
+
+  <div class="live-ticker">
+    <div class="ticker-container">
+      <div class="ticker-badge">
+        <div class="ticker-pulse"></div>
+        <span class="rajdhani text-green">LIVE</span>
+      </div>
+      <div class="ticker-divider"></div>
+      <div class="ticker-content" id="tickerContent">
+        <div class="user-avatar">V</div>
+        <span class="ticker-text">
+          <strong class="text-neon">Void_X</strong> just purchased <strong class="text-cyan">Elden Ring</strong>
+          <span class="ticker-time">· 2s ago</span>
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <main class="store-grid-container">
+    <h2 class="orbitron section-title">Featured Vault Releases</h2>
+    <div class="store-grid">
+
+      <div class="game-card cyberpunk-theme">
+        <div class="thumb-container">
+          <img src="https://picsum.photos/seed/cyber77/400/220" data-hover="https://picsum.photos/seed/cyber2077/800/450" class="card-img" alt="Cyberpunk 2077">
+          <div class="card-overlay-gradient"></div>
+          <div class="badge-row">
+            <span class="tag-badge hot">🔥 HOT</span>
+            <span class="tag-badge sale">-25%</span>
+          </div>
+          <div class="rating-badge">
+            <span class="star">★</span><span>9.1</span>
+          </div>
+          <div class="hover-action-overlay">
+            <div class="action-circle bg-cyber">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="#00d4ff"><polygon points="5,3 19,12 5,21"/></svg>
+            </div>
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="genre-tag tag-cyber">RPG</div>
+          <h3 class="rajdhani game-title">Cyberpunk 2077</h3>
+          <div class="game-subtitle">Phantom Liberty Edition</div>
+          <div class="tags-row">
+            <span>Open World</span><span>Sci-Fi</span>
+          </div>
+          <div class="card-footer">
+            <div class="price-box">
+              <div class="orig-price">$79.99</div>
+              <div class="orbitron current-price">$59.99</div>
+            </div>
+            <button class="add-to-cart bg-cyber-btn">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="game-card elden-theme">
+        <div class="thumb-container">
+          <img src="https://picsum.photos/seed/elden01/400/220" data-hover="https://picsum.photos/seed/eldenring2/800/450" class="card-img" alt="Elden Ring">
+          <div class="card-overlay-gradient"></div>
+          <div class="badge-row"></div>
+          <div class="rating-badge">
+            <span class="star">★</span><span>9.6</span>
+          </div>
+          <div class="hover-action-overlay">
+            <div class="action-circle bg-elden">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="#f59e0b"><polygon points="5,3 19,12 5,21"/></svg>
+            </div>
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="genre-tag tag-elden">Action RPG</div>
+          <h3 class="rajdhani game-title">Elden Ring</h3>
+          <div class="game-subtitle">Shadow of the Erdtree</div>
+          <div class="tags-row">
+            <span>Souls-like</span><span>Fantasy</span>
+          </div>
+          <div class="card-footer">
+            <div class="price-box">
+              <div class="orbitron current-price">$69.99</div>
+            </div>
+            <button class="add-to-cart bg-elden-btn">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="game-card gta-theme">
+        <div class="thumb-container">
+          <img src="https://picsum.photos/seed/gta6/400/220" data-hover="https://picsum.photos/seed/gtavi2024/800/450" class="card-img" alt="GTA VI">
+          <div class="card-overlay-gradient"></div>
+          <div class="badge-row">
+            <span class="tag-badge new">NEW</span>
+            <span class="tag-badge hot">🔥 HOT</span>
+          </div>
+          <div class="rating-badge">
+            <span class="star">★</span><span>9.8</span>
+          </div>
+          <div class="hover-action-overlay">
+            <div class="action-circle bg-gta">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="#ec4899"><polygon points="5,3 19,12 5,21"/></svg>
+            </div>
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="genre-tag tag-gta">Action</div>
+          <h3 class="rajdhani game-title">GTA VI</h3>
+          <div class="game-subtitle">Vice City Returns</div>
+          <div class="tags-row">
+            <span>Open World</span><span>Crime</span>
+          </div>
+          <div class="card-footer">
+            <div class="price-box">
+              <div class="orbitron current-price">$79.99</div>
+            </div>
+            <button class="add-to-cart bg-gta-btn">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="game-card cod-theme">
+        <div class="thumb-container">
+          <img src="https://picsum.photos/seed/codwz/400/220" data-hover="https://picsum.photos/seed/warzone3/800/450" class="card-img" alt="Call of Duty Warzone">
+          <div class="card-overlay-gradient"></div>
+          <div class="badge-row">
+            <span class="tag-badge hot">🔥 HOT</span>
+          </div>
+          <div class="rating-badge">
+            <span class="star">★</span><span>8.4</span>
+          </div>
+          <div class="hover-action-overlay">
+            <div class="action-circle bg-cod">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="#22c55e"><polygon points="5,3 19,12 5,21"/></svg>
+            </div>
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="genre-tag tag-cod">FPS</div>
+          <h3 class="rajdhani game-title">Call of Duty</h3>
+          <div class="game-subtitle">Warzone 3.0</div>
+          <div class="tags-row">
+            <span>Battle Royale</span><span>FPS</span>
+          </div>
+          <div class="card-footer">
+            <div class="price-box">
+              <div class="orbitron current-price text-green">FREE</div>
+            </div>
+            <button class="add-to-cart bg-cod-btn">Play Free</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <script>
+    // Navbar scroll handler
+    window.addEventListener('scroll', () => {
+      const nav = document.getElementById('navbar');
+      if (window.scrollY > 50) {
+        nav.classList.add('scrolled');
+      } else {
+        nav.classList.remove('scrolled');
+      }
+    });
+
+    // Simulated Loading Transitions
+    const phases = ["INITIALIZING...", "LOADING ASSETS...", "CALIBRATING UI...", "ENTERING VAULT..."];
+    let progress = 0;
+    const bar = document.getElementById('progressBar');
+    const phaseText = document.getElementById('phaseText');
+
+    const loader = setInterval(() => {
+      progress += Math.random() * 6 + 2;
+      if (progress >= 100) {
+        progress = 100;
+        clearInterval(loader);
+        setTimeout(() => {
+          document.getElementById('loadingScreen').style.opacity = '0';
+          setTimeout(() => document.getElementById('loadingScreen').style.display = 'none', 600);
+        }, 400);
+      }
+      bar.style.width = progress + '%';
+      let phaseIndex = Math.floor((progress / 100) * phases.length);
+      if (phaseIndex > 3) phaseIndex = 3;
+      phaseText.innerText = `${phases[phaseIndex]} ${Math.floor(progress)}%`;
+    }, 50);
+
+    // Dynamic Image Preview Handler
+    document.querySelectorAll('.game-card').forEach(card => {
+      const img = card.querySelector('.card-img');
+      const original = img.src;
+      const hoverSrc = img.getAttribute('data-hover');
+      card.addEventListener('mouseenter', () => img.src = hoverSrc);
+      card.addEventListener('mouseleave', () => img.src = original);
+    });
+
+    // Expand Search Input Node
+    const wrapper = document.getElementById('searchWrapper');
+    document.getElementById('searchIcon').addEventListener('click', () => {
+      wrapper.classList.toggle('open');
+    });
+  </script>
+</body>
+</html>
